@@ -1,4 +1,64 @@
 body {
 	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	color: #333333;
+	font-size: 16px;
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
+header {
+	background-color: #333333;
+	color: #ffffff;
+	text-align: center;
+	font-size:3em;
+}
+
+header #name {
+	padding: 50px 0;
+}
+
+header nav {
+	font-size: .4em;
+}
+
+header nav ul {
+	list-style: none;
+}
+
+header nav ul li {
+	display: inline;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 0 15px;
+	border-right: 2px solid #dddddd;
+}
+
+header nav ul li:last-child {
+	border-right: none;
+}
+
+header nav ul li.experience:hover {
+	background-color: #6CE0F1;
+}
+
+header nav ul li.achievements:hover {
+	background-color: #FB4485;
+}
+
+header nav ul li.skills:hover {
+	background-color: #FDA333;
+}
+
+header nav ul li.education:hover {
+	background-color: #C2E15F;
+}
+
+header nav a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+ul.noindent {
+    margin: 0;
+    padding: 0;
+}
