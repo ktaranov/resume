@@ -14,7 +14,19 @@ header {
 }
 
 header #name {
-	padding: 50px 0;
+	padding: 75px 0;
+}
+
+header #name .first {
+	font-family: "Helvetica Neue Light", Helvetica, sans-serif;
+}
+
+header #name .middle {
+	font-family: "Helvetica Neue Ultra Light", Helvetica, sans-serif;
+}
+
+header #name .last {
+	font-family: "Helvetica Neue Condensed Bold", Helvetica, sans-serif;
 }
 
 header nav {
