@@ -49,6 +49,15 @@ h6 {
 	color: #999999;
 }
 
+ul.noindent {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
 header {
 	background-color: #333333;
 	color: #ffffff;
@@ -75,6 +84,7 @@ header #name .last {
 nav {
 	text-align: center;
 	font-size: 1.5em;
+	position: fixed;
 }
 
 nav a, nav a:hover, nav a:focus {
@@ -203,6 +213,10 @@ a:focus, a:hover {
 	margin-top: 15px;
 }
 
+#education {
+	margin-bottom: 100px;
+}
+
 .concentration {
 	margin-top: 10px;
 }
@@ -211,11 +225,7 @@ a:focus, a:hover {
 	font-family: "HelveticaNeue-LightItalic", Helvetica, sans-serif;
 }
 
-ul.noindent {
-    margin: 0;
-    padding: 0;
-}
-
-ul {
-	list-style: none;
+footer {
+	background-color: #333333;
+	min-height: 50px;
 }
