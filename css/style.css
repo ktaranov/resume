@@ -1,5 +1,6 @@
 body {
 	font-family: "HelveticaNeue", Helvetica, sans-serif;
+	text-align: left;
 	color: #333333;
 	font-size: 16px;
 	-moz-box-sizing: border-box;
@@ -12,7 +13,7 @@ h1 {
 }
 
 h2 {
-	font-size: 1.5em;
+	font-size: 1.6em;
 	font-family: "HelveticaNeue-CondensedBold", Helvetica, sans-serif;
 }
 
@@ -61,12 +62,13 @@ header #name .last {
 }
 
 nav {
-	font-family: "HelveticaNeue-CondensedBold", Helvetica, sans-serif;
-}
-
-nav {
 	text-align: center;
 	font-size: 1.5em;
+}
+
+nav a, nav a:hover, nav a:focus {
+	font-family: "HelveticaNeue-CondensedBold", Helvetica, sans-serif;
+	text-decoration: none;
 }
 
 nav ul li {
@@ -106,9 +108,17 @@ nav ul li.education:hover {
 	background-color: #C2E15F;
 }
 
-.sticking {
-	position: fixed;
-	z-index: 99;
+.nav>li>a:focus, .nav>li>a:hover {
+  text-decoration: none;
+  background-color: inherit;
+}
+
+.navbar .nav, .navbar .nav > li {
+  float:none;
+  display:inline-block;
+  *display:inline; /* ie7 fix */
+  *zoom:1; /* hasLayout ie7 trigger */
+  vertical-align: top;
 }
 
 a {
@@ -117,8 +127,13 @@ a {
 	text-decoration: none;
 }
 
-#contact {
+a:focus, a:hover {
+  color: #333333;
+}
+
+#sidebar {
 	font-family: "HelveticaNeue-Light", Helvetica, sans-serif;
+	text-align: right;
 }
 
 .home:before {
