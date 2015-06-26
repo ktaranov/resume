@@ -53,9 +53,8 @@
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	speak: none;
-	padding-right: 3px;
+	padding-left: 3px;
 }
-
 
 /**
  * Individual icons

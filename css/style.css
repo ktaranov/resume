@@ -8,17 +8,17 @@ body {
 }
 
 h1 {
-	font-size: 2em;
+	font-size: 3em;
 	font-family: "HelveticaNeue-CondensedBold", Helvetica, sans-serif;
 }
 
 h2 {
-	font-size: 1.6em;
+	font-size: 2em;
 	font-family: "HelveticaNeue-CondensedBold", Helvetica, sans-serif;
 }
 
 h3 {
-	font-size: 1.17em;
+	font-size: 1.6em;
 	font-family: "HelveticaNeue-CondensedBold", Helvetica, sans-serif;
 }
 
@@ -42,7 +42,7 @@ header {
 	background-color: #333333;
 	color: #ffffff;
 	text-align: center;
-	font-size: 3em;
+	font-size: 2em;
 }
 
 header #name {
@@ -134,6 +134,10 @@ a:focus, a:hover {
 #sidebar {
 	font-family: "HelveticaNeue-Light", Helvetica, sans-serif;
 	text-align: right;
+}
+
+.contact-item {
+	padding: 8px 0;
 }
 
 .home:before {
