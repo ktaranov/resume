@@ -199,6 +199,18 @@ a:focus, a:hover {
 	padding-left: 0;
 }
 
+.project {
+	margin-top: 15px;
+}
+
+.concentration {
+	margin-top: 10px;
+}
+
+.concentration div:first-child {
+	font-family: "HelveticaNeue-LightItalic", Helvetica, sans-serif;
+}
+
 ul.noindent {
     margin: 0;
     padding: 0;
