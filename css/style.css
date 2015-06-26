@@ -1,0 +1,166 @@
+body {
+	font-family: "HelveticaNeue", Helvetica, sans-serif;
+	text-align: left;
+	color: #333333;
+	font-size: 16px;
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1 {
+	font-size: 2em;
+	font-family: "HelveticaNeue-CondensedBold", Helvetica, sans-serif;
+}
+
+h2 {
+	font-size: 1.6em;
+	font-family: "HelveticaNeue-CondensedBold", Helvetica, sans-serif;
+}
+
+h3 {
+	font-size: 1.17em;
+	font-family: "HelveticaNeue-CondensedBold", Helvetica, sans-serif;
+}
+
+h4 {
+	font-size: 1.12em;
+	font-family: "HelveticaNeue-BoldItalic", Helvetica, sans-serif;
+}
+
+h5 {
+	font-size: .83em;
+	font-family: "HelveticaNeue-Bold", Helvetica, sans-serif;
+}
+
+h6 {
+	font-size: .75em;
+	font-family: "HelveticaNeue-Medium", Helvetica, sans-serif;
+	color: #999999;
+}
+
+header {
+	background-color: #333333;
+	color: #ffffff;
+	text-align: center;
+	font-size: 3em;
+}
+
+header #name {
+	padding: 75px 0;
+}
+
+header #name .first {
+	font-family: "HelveticaNeue-Light", Helvetica, sans-serif;
+}
+
+header #name .middle {
+	font-family: "HelveticaNeue-UltraLight", Helvetica, sans-serif;
+}
+
+header #name .last {
+	font-family: "HelveticaNeue-CondensedBold", Helvetica, sans-serif;
+}
+
+nav {
+	text-align: center;
+	font-size: 1.5em;
+}
+
+nav a, nav a:hover, nav a:focus {
+	font-family: "HelveticaNeue-CondensedBold", Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 5px 20px 10px;
+}
+
+nav ul li.experience {
+	border-top: 4px solid #6CE0F1;
+}
+
+nav ul li.achievements {
+	border-top: 4px solid #FB4485;
+}
+
+nav ul li.skills {
+	border-top: 4px solid #FDA333;
+}
+
+nav ul li.education {
+	border-top: 4px solid #C2E15F;
+}
+
+nav ul li.experience:hover {
+	background-color: #6CE0F1;
+}
+
+nav ul li.achievements:hover {
+	background-color: #FB4485;
+}
+
+nav ul li.skills:hover {
+	background-color: #FDA333;
+}
+
+nav ul li.education:hover {
+	background-color: #C2E15F;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+  text-decoration: none;
+  background-color: inherit;
+}
+
+.navbar .nav, .navbar .nav > li {
+  float:none;
+  display:inline-block;
+  *display:inline; /* ie7 fix */
+  *zoom:1; /* hasLayout ie7 trigger */
+  vertical-align: top;
+}
+
+a {
+	font-family: "HelveticaNeue-Light", Helvetica, sans-serif;
+	color: #333333;
+	text-decoration: none;
+}
+
+a:focus, a:hover {
+  color: #333333;
+}
+
+#sidebar {
+	font-family: "HelveticaNeue-Light", Helvetica, sans-serif;
+	text-align: right;
+}
+
+.home:before {
+	content: '\f409';
+}
+
+.phone:before {
+	content: '\f437';
+}
+
+.mail:before {
+	content: '\f410';
+}
+
+.github:before {
+	content: '\f200';
+}
+
+.wordpress:before {
+	content: '\f205';
+}
+
+ul.noindent {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+	list-style: none;
+}
