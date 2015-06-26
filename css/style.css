@@ -1,16 +1,47 @@
 body {
-	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-family: "HelveticaNeue", Helvetica, sans-serif;
 	color: #333333;
 	font-size: 16px;
 	-moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
+h1 {
+	font-size: 2em;
+	font-family: "HelveticaNeue-CondensedBold", Helvetica, sans-serif;
+}
+
+h2 {
+	font-size: 1.5em;
+	font-family: "HelveticaNeue-CondensedBold", Helvetica, sans-serif;
+}
+
+h3 {
+	font-size: 1.17em;
+	font-family: "HelveticaNeue-CondensedBold", Helvetica, sans-serif;
+}
+
+h4 {
+	font-size: 1.12em;
+	font-family: "HelveticaNeue-BoldItalic", Helvetica, sans-serif;
+}
+
+h5 {
+	font-size: .83em;
+	font-family: "HelveticaNeue-Bold", Helvetica, sans-serif;
+}
+
+h6 {
+	font-size: .75em;
+	font-family: "HelveticaNeue-Medium", Helvetica, sans-serif;
+	color: #999999;
+}
+
 header {
 	background-color: #333333;
 	color: #ffffff;
 	text-align: center;
-	font-size:3em;
+	font-size: 3em;
 }
 
 header #name {
@@ -18,59 +49,103 @@ header #name {
 }
 
 header #name .first {
-	font-family: "Helvetica Neue Light", Helvetica, sans-serif;
+	font-family: "HelveticaNeue-Light", Helvetica, sans-serif;
 }
 
 header #name .middle {
-	font-family: "Helvetica Neue Ultra Light", Helvetica, sans-serif;
+	font-family: "HelveticaNeue-UltraLight", Helvetica, sans-serif;
 }
 
 header #name .last {
-	font-family: "Helvetica Neue Condensed Bold", Helvetica, sans-serif;
+	font-family: "HelveticaNeue-CondensedBold", Helvetica, sans-serif;
 }
 
-header nav {
-	font-size: .4em;
+nav {
+	font-family: "HelveticaNeue-CondensedBold", Helvetica, sans-serif;
 }
 
-header nav ul {
-	list-style: none;
+nav {
+	text-align: center;
+	font-size: 1.5em;
 }
 
-header nav ul li {
-	display: inline;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	padding: 0 15px;
-	border-right: 2px solid #dddddd;
+nav ul li {
+	display: inline-block;
+	padding: 5px 20px 10px;
 }
 
-header nav ul li:last-child {
-	border-right: none;
+nav ul li.experience {
+	border-top: 4px solid #6CE0F1;
 }
 
-header nav ul li.experience:hover {
+nav ul li.achievements {
+	border-top: 4px solid #FB4485;
+}
+
+nav ul li.skills {
+	border-top: 4px solid #FDA333;
+}
+
+nav ul li.education {
+	border-top: 4px solid #C2E15F;
+}
+
+nav ul li.experience:hover {
 	background-color: #6CE0F1;
 }
 
-header nav ul li.achievements:hover {
+nav ul li.achievements:hover {
 	background-color: #FB4485;
 }
 
-header nav ul li.skills:hover {
+nav ul li.skills:hover {
 	background-color: #FDA333;
 }
 
-header nav ul li.education:hover {
+nav ul li.education:hover {
 	background-color: #C2E15F;
 }
 
-header nav a {
-	color: #ffffff;
+.sticking {
+	position: fixed;
+	z-index: 99;
+}
+
+a {
+	font-family: "HelveticaNeue-Light", Helvetica, sans-serif;
+	color: #333333;
 	text-decoration: none;
+}
+
+#contact {
+	font-family: "HelveticaNeue-Light", Helvetica, sans-serif;
+}
+
+.home:before {
+	content: '\f409';
+}
+
+.phone:before {
+	content: '\f437';
+}
+
+.mail:before {
+	content: '\f410';
+}
+
+.github:before {
+	content: '\f200';
+}
+
+.wordpress:before {
+	content: '\f205';
 }
 
 ul.noindent {
     margin: 0;
     padding: 0;
+}
+
+ul {
+	list-style: none;
 }
