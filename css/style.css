@@ -34,12 +34,12 @@ h3 {
 }
 
 h4 {
-	font-size: 1.12em;
+	font-size: 1em;
 	font-family: "HelveticaNeue-BoldItalic", Helvetica, sans-serif;
 }
 
 h5 {
-	font-size: .83em;
+	font-size: .9em;
 	font-family: "HelveticaNeue-Bold", Helvetica, sans-serif;
 }
 
@@ -107,16 +107,32 @@ nav ul li.experience:hover {
 	background-color: #6CE0F1;
 }
 
+#experience h2:first-letter {
+	color: #6CE0F1;
+}
+
 nav ul li.achievements:hover {
 	background-color: #FB4485;
+}
+
+#achievements h2:first-letter {
+	color: #FB4485;
 }
 
 nav ul li.skills:hover {
 	background-color: #FDA333;
 }
 
+#skills h2:first-letter {
+	color: #FDA333;
+}
+
 nav ul li.education:hover {
 	background-color: #C2E15F;
+}
+
+#education h2:first-letter {
+	color: #C2E15F;
 }
 
 .nav>li>a:focus, .nav>li>a:hover {
@@ -175,12 +191,12 @@ a:focus, a:hover {
 	margin-top: 12px;
 }
 
-#experience h2:first-letter {
-	color: #6CE0F1;
-}
-
 .location {
 	text-align: right;
+}
+
+.description {
+	padding-left: 0;
 }
 
 ul.noindent {
