@@ -168,6 +168,10 @@ nav ul li.contactme:hover {
 	color: white;
 }
 
+.navbar {
+	margin-bottom: 0;
+}
+
 /******************************************************************************/
 
 /*Sticks menu to top of screen when scrolling*/
@@ -179,6 +183,7 @@ nav ul li.contactme:hover {
 	right:0px;
 	left:0px;
 	z-index:999;
+	border-bottom: 1px solid #777777;
 }
 
 .navbar .nav, .navbar .nav > li {
@@ -199,7 +204,7 @@ nav ul li.contactme:hover {
 }
 
 .contact-item {
-	padding: 8px 0;
+	padding: 5px 0;
 }
 
 /******************************************************************************/
@@ -268,6 +273,7 @@ footer {
 	color: white;
 	text-align: center;
 	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 footer .genericon {
@@ -276,8 +282,7 @@ footer .genericon {
 }
 
 footer ul li {
-	display: inline;
-	margin: 5px 15px;
+	padding-top: 15px;
 }
 
 footer a, footer a:hover, footer a:focus {
@@ -298,15 +303,33 @@ footer a, footer a:hover, footer a:focus {
 		width: 100%;
 		margin-bottom: 5px;
 	}
+
+	header {
+		font-size: 1em;
+		max-height: 125px;
+	}
+
+	header #name {
+		padding: 1em 0;
+	}
+
+	#experience h2 {
+		margin-top: 0;
+	}
 }
 
 @media screen and (max-width: 992px) {
+
 	#sidebar {
 		display: none;
 	}
 
 	nav ul li.contactme {
 		display: inline-block;
+	}
+
+	.description {
+		padding-left: 15px;
 	}
 }
 
