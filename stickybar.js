@@ -1,5 +1,5 @@
 var win         = $(window),
-    fxel        = $('.nav'),
+    fxel        = $('.navbar-nav'),
     eloffset    = fxel.offset().top;
 
 win.scroll(function() {

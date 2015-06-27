@@ -14,10 +14,6 @@ body {
   display:         flex;
 }
 
-.pull-bottom div:last-child {
-	margin-top: 19px;
-}
-
 h1 {
 	font-size: 3em;
 	font-family: "HelveticaNeue-CondensedBold", Helvetica, sans-serif;
@@ -68,6 +64,10 @@ a:focus, a:hover {
   color: #333333;
 }
 
+/******************************************************************************/
+
+/*Header stylings*/
+
 header {
 	background-color: #333333;
 	color: #ffffff;
@@ -91,6 +91,10 @@ header #name .last {
 	font-family: "HelveticaNeue-CondensedBold", Helvetica, sans-serif;
 }
 
+/******************************************************************************/
+
+/*Full screen nav stylings*/
+
 nav {
 	text-align: center;
 	font-size: 1.5em;
@@ -104,8 +108,69 @@ nav a, nav a:hover, nav a:focus {
 
 nav ul li {
 	display: inline-block;
-	padding: 5px 20px 10px;
+	padding-bottom: 5px;
 }
+nav ul li.experience {
+	border-top: 4px solid #6CE0F1;
+}
+
+nav ul li.experience:hover {
+	background-color: #6CE0F1;
+}
+
+nav ul li.achievements {
+	border-top: 4px solid #FB4485;
+}
+
+nav ul li.achievements:hover {
+	background-color: #FB4485;
+}
+
+nav ul li.skills {
+	border-top: 4px solid #FDA333;
+}
+
+nav ul li.skills:hover {
+	background-color: #FDA333;
+}
+
+nav ul li.education {
+	border-top: 4px solid #C2E15F;
+}
+
+nav ul li.education:hover {
+	background-color: #C2E15F;
+}
+
+nav ul li.contactme {
+	border-top: 4px solid #D3A4F9;
+}
+
+nav ul li.contactme:hover {
+	background-color: #D3A4F9;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+  text-decoration: none;
+  background-color: inherit;
+}
+
+/******************************************************************************/
+
+/*Fixes for mobile menu toggle*/
+
+.navbar-header .genericon {
+	padding-left: 0;
+}
+
+.navbar-toggle {
+	background-color: #333333;
+	color: white;
+}
+
+/******************************************************************************/
+
+/*Sticks menu to top of screen when scrolling*/
 
 .fixed {
 	background-color: white;
@@ -116,59 +181,6 @@ nav ul li {
 	z-index:999;
 }
 
-nav ul li.experience {
-	border-top: 4px solid #6CE0F1;
-}
-
-nav ul li.achievements {
-	border-top: 4px solid #FB4485;
-}
-
-nav ul li.skills {
-	border-top: 4px solid #FDA333;
-}
-
-nav ul li.education {
-	border-top: 4px solid #C2E15F;
-}
-
-nav ul li.experience:hover {
-	background-color: #6CE0F1;
-}
-
-#experience h2:first-letter {
-	color: #6CE0F1;
-}
-
-nav ul li.achievements:hover {
-	background-color: #FB4485;
-}
-
-#achievements h2:first-letter {
-	color: #FB4485;
-}
-
-nav ul li.skills:hover {
-	background-color: #FDA333;
-}
-
-#skills h2:first-letter {
-	color: #FDA333;
-}
-
-nav ul li.education:hover {
-	background-color: #C2E15F;
-}
-
-#education h2:first-letter {
-	color: #C2E15F;
-}
-
-.nav>li>a:focus, .nav>li>a:hover {
-  text-decoration: none;
-  background-color: inherit;
-}
-
 .navbar .nav, .navbar .nav > li {
   float:none;
   display:inline-block;
@@ -176,6 +188,10 @@ nav ul li.education:hover {
   *zoom:1; /* hasLayout ie7 trigger */
   vertical-align: top;
 }
+
+/******************************************************************************/
+
+/*Sidebar styling*/
 
 #sidebar {
 	font-family: "HelveticaNeue-Light", Helvetica, sans-serif;
@@ -186,25 +202,29 @@ nav ul li.education:hover {
 	padding: 8px 0;
 }
 
-.home:before {
-	content: '\f409';
+/******************************************************************************/
+
+/*First letter colorings for headings*/
+
+#experience h2:first-letter {
+	color: #6CE0F1;
 }
 
-.phone:before {
-	content: '\f437';
+#achievements h2:first-letter {
+	color: #FB4485;
 }
 
-.mail:before {
-	content: '\f410';
+#skills h2:first-letter {
+	color: #FDA333;
 }
 
-.github:before {
-	content: '\f200';
+#education h2:first-letter {
+	color: #C2E15F;
 }
 
-.wordpress:before {
-	content: '\f205';
-}
+/******************************************************************************/
+
+/*Alignments for main content areas*/
 
 #experience h2 {
 	margin-top: 12px;
@@ -216,6 +236,10 @@ nav ul li.education:hover {
 
 .description {
 	padding-left: 0;
+}
+
+.pull-bottom div:last-child {
+	margin-top: 19px;
 }
 
 .project {
@@ -234,7 +258,60 @@ nav ul li.education:hover {
 	font-family: "HelveticaNeue-LightItalic", Helvetica, sans-serif;
 }
 
+/******************************************************************************/
+
+/*Footer styles*/
+
 footer {
 	background-color: #333333;
-	min-height: 50px;
+	min-height: 70px;
+	color: white;
+	text-align: center;
+	padding-top: 10px;
+}
+
+footer .genericon {
+	padding-left: 0;
+	padding-right: 5px;
+}
+
+footer ul li {
+	display: inline;
+	margin: 5px 15px;
+}
+
+footer a, footer a:hover, footer a:focus {
+	color: white;
+}
+
+/******************************************************************************/
+
+@media screen and (max-width: 768px) {
+	
+	/*Fix menu toggle stuff*/
+
+	.navbar-header, .navbar-header button {
+		max-height: 42px;
+	}
+
+	.navbar-nav li {
+		width: 100%;
+		margin-bottom: 5px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	#sidebar {
+		display: none;
+	}
+
+	nav ul li.contactme {
+		display: inline-block;
+	}
+}
+
+@media screen and (min-width: 993px) {
+	nav ul li.contactme {
+		display: none !important;
+	}
 }

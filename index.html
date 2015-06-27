@@ -2,9 +2,9 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    	<meta name="viewport" content="width=device-width, initial-scale=1">
-    	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		<link href="css/fonts.css" rel="stylesheet" type="text/css">
@@ -24,199 +24,206 @@
 				</header>
 			</div>
 		</div>
+		<nav class="navbar">
+		  <div class="container">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="genericon genericon-menu"></span>
+		      </button>
+		    </div>
+
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav noindent">
+		        <li class="experience"><a href="#experience">experience</a></li>
+		        <li class="achievements"><a href="#achievements">achievements</a></li>
+		        <li class="skills"><a href="#skills">skills</a></li>
+		        <li class="education"><a href="#education">education</a></li>
+		        <li class="contactme"><a href="#contactme">contact</a></li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
 		<div class="container">
 			<div class="row">
-				<nav class="col-md-12 navbar">
-					<div class="collapse navbar-collapse">
-					      <ul class="nav navbar-nav noindent">
-							<li class="experience">
-								<a href="#experience">experience</a>
-							</li>
-							<li class="achievements">
-								<a href="#achievements">achievements</a>
-							</li>
-							<li class="skills">
-								<a href="#skills">skills</a>
-							</li>
-							<li class="education">
-								<a href="#education">education</a>
-							</li>
+				<div id="sidebar" class="col-md-3  text-right">
+					<section id="contact">
+						<h3>contact</h3>
+						<ul class="noindent">
+							<li class="contact-item">Chicago, IL<span class="genericon genericon-home"></span></li>
+							<li class="contact-item">(847) 791 4808<span class="genericon genericon-phone"></span></li>
+							<li class="contact-item"><a href="mailto:hello@shawnajroberts.com">hello@shawnajroberts.com</a><span class="genericon genericon-mail"></span></li>
+							<li class="contact-item"><a href="http://github.com/shawnajean">shawnajean</a><span class="genericon genericon-github"></span></li>
+							<li class="contact-item"><a href="http://twitter.com/shawnajeanr">shawnajeanr</a><span class="genericon genericon-twitter"></span></li>
+							<li class="contact-item"><a href="http://shawnajroberts.com">shawnajroberts.com</a><span class="genericon genericon-wordpress"></span></li>
 						</ul>
-					</div>
-				</nav>
-			</div>
-			<div id="content-area">
-				<div class="row">
-					<div id="sidebar" class="col-md-3  text-right">
-						<section id="contact">
-							<h3>contact</h3>
-							<ul class="noindent">
-								<li class="contact-item">Chicago, IL<span class="genericon genericon-home"></span></li>
-								<li class="contact-item">(847) 791 4808<span class="genericon genericon-phone"></span></li>
-								<li class="contact-item"><a href="mailto:hello@shawnajroberts.com">hello@shawnajroberts.com</a><span class="genericon genericon-mail"></span></li>
-								<li class="contact-item"><a href="http://github.com/shawnajean">shawnajean</a><span class="genericon genericon-github"></span></li>
-								<li class="contact-item"><a href="http://twitter.com/shawnajeanr">shawnajeanr</a><span class="genericon genericon-twitter"></span></li>
-								<li class="contact-item"><a href="http://shawnajroberts.com">shawnajroberts.com</a><span class="genericon genericon-wordpress"></span></li>
-							</ul>
-						</section>
+					</section>
+					<hr/>
+					<section id="skills-overview">
+						<h3>management</h3>
+						<ul class="noindent">
+							<li>Agile project management</li>
+							<li>Kanban boards</li>
+							<li>conflict resolution</li>
+							<li>team dynamics</li>
+						</ul>
 						<hr/>
-						<section id="skills-overview">
-							<h3>management</h3>
-							<ul class="noindent">
-								<li>Agile project management</li>
-								<li>Kanban boards</li>
-								<li>conflict resolution</li>
-								<li>team dynamics</li>
-							</ul>
-							<hr/>
-							<h3>communication</h3>
-							<ul>
-								<li>large group facilitation</li>
-								<li>active listening</li>
-								<li>body language</li>
-							</ul>
-							<hr/>
-							<h3>programming</h3>
-							<ul>
-								<li>Java</li>
-								<li>C++</li>
-								<li>C</li>
-								<li>Python</li>
-								<li>ObjC</li>
-								<li>HTML</li>
-								<li>CSS</li>
-								<li>JavaScript</li>
-								<li>documentation</li>
-							</ul>
-						</section>
-					</div>
-					<div id="main" class="col-md-9">
-						<section id="experience">
-							<h2>experience</h2>
-							<div class="company">
-								<div class="row row-eq-height pull-bottom">
-									<div class="company-name col-md-9">
-										<h3>automattic</h3>
-									</div>
-									<div class="location col-md-3">
-										<h6>Remote</h6>
-									</div>
+						<h3>communication</h3>
+						<ul>
+							<li>large group facilitation</li>
+							<li>active listening</li>
+							<li>body language</li>
+						</ul>
+						<hr/>
+						<h3>programming</h3>
+						<ul>
+							<li>Java</li>
+							<li>C++</li>
+							<li>C</li>
+							<li>Python</li>
+							<li>ObjC</li>
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>JavaScript</li>
+							<li>documentation</li>
+						</ul>
+					</section>
+				</div>
+				<div id="main" class="col-md-9">
+					<section id="experience">
+						<h2>experience</h2>
+						<div class="company">
+							<div class="row row-eq-height pull-bottom">
+								<div class="company-name col-md-9">
+									<h3>automattic</h3>
 								</div>
-								<div class="position row">
-									<div class="dates col-md-3">
-										<h5>dec.2013 - present</h5>
-									</div>
-									<div class="description col-md-9">
-										<h4>Happiness Engineer</h4>Help people use Automattic’s products, including WordPress.com, Jetpack, and Gravatar. Troubleshoot, investigate, and create detailed bug reports. Create and edit support documentation.
-									</div>
+								<div class="location col-md-3">
+									<h6>Remote</h6>
 								</div>
 							</div>
-							<div class="company">
-								<div class="row row-eq-height pull-bottom">
-									<div class="company-name col-md-9">
-										<h3>hampshire college</h3>
-									</div>
-									<div class="location col-md-3">
-										<h6>Amherst, Massachusetts</h6>
-									</div>
+							<div class="position row">
+								<div class="dates col-md-3">
+									<h5>dec.2013 - present</h5>
 								</div>
-								<div class="position row">
-									<div class="dates col-md-3">
-										<h5>aug.2012 - feb.2014</h5>
-									</div>
-									<div class="description col-md-9">
-										<h4>Telecommunications Technician</h4>
-										Assist Network Engineer in design, construction and maintenance of campus network and phone infrastructure. Oversee physical network implementation. Provide support and troubleshooting for VoIP, POTS, CATV, and network infrastructure.
-									</div>
-								</div>
-								<div class="position row">
-									<div class="dates col-md-3">
-										<h5>jan.2012 - may.2012</h5>
-									</div>
-									<div class="description col-md-9">
-										<h4>Student IT Manager</h4>
-										Supervised student workers. Participated in hiring and training of new technicians. Coordinated communication between Staff User Support and student workers. Provided technical support to student, faculty, and staff members.
-									</div>
+								<div class="description col-md-9">
+									<h4>Happiness Engineer</h4>Help people use Automattic’s products, including WordPress.com, Jetpack, and Gravatar. Troubleshoot, investigate, and create detailed bug reports. Create and edit support documentation.
 								</div>
 							</div>
-						</section>
-						<section id="achievements">
-							<h2>achievements</h2>
-							<div class="row project">
-								<div class="col-md-3 title">
-									<h5>Senior Thesis</h5>
+						</div>
+						<div class="company">
+							<div class="row row-eq-height pull-bottom">
+								<div class="company-name col-md-9">
+									<h3>hampshire college</h3>
 								</div>
-								<div class="col-md-9 description">
-									<h4>The Art of Management</h4>
-									Wrote handbook of management and communication techniques focusing on inter- personal relationships and team dynamics. Researched management techniques, body language, and hierarchical structures.
+								<div class="location col-md-3">
+									<h6>Amherst, Massachusetts</h6>
 								</div>
 							</div>
-							<div class="row project">
-								<div class="col-md-3 title">
-									<h5>Management Mentor</h5>
+							<div class="position row">
+								<div class="dates col-md-3">
+									<h5>aug.2012 - feb.2014</h5>
 								</div>
-								<div class="col-md-9 description">
-									Designed and launched a series of management workshops focusing on different aspects of theater management including interpersonal communication, conflict resolution, rehearsal structure, and stage management techniques. Created handbook of best practices and technical information.
-								</div>
-							</div>
-							<div class="row project">
-								<div class="col-md-3 title">
-									<h5>Student IT Manager</h5>
-								</div>
-								<div class="col-md-9 description">
-									Generated documentation covering common software and hardware issues, symptoms, and solutions. Redesigned workflow and documented best practices. Created a training manual.
+								<div class="description col-md-9">
+									<h4>Telecommunications Technician</h4>
+									Assist Network Engineer in design, construction and maintenance of campus network and phone infrastructure. Oversee physical network implementation. Provide support and troubleshooting for VoIP, POTS, CATV, and network infrastructure.
 								</div>
 							</div>
-						</section>
-						<section id="skills">
-							<h2>skills</h2>
-							<div class="row area-of-expertise">
-								<div class="col-md-12">
-									<h3>management</h3>
-									Project management (introductory Agile, kanban boards, & Getting Things Done), community management, experience with non-traditional hierarchies, large group meeting/discussion facilitation, scheduling, filing, inventory.
+							<div class="position row">
+								<div class="dates col-md-3">
+									<h5>jan.2012 - may.2012</h5>
+								</div>
+								<div class="description col-md-9">
+									<h4>Student IT Manager</h4>
+									Supervised student workers. Participated in hiring and training of new technicians. Coordinated communication between Staff User Support and student workers. Provided technical support to student, faculty, and staff members.
 								</div>
 							</div>
-							<div class="row area-of-expertise">
-								<div class="col-md-12">
-									<h3>communication</h3>
-									Group facilitation, streamlined project tracking & documentation, policy creation & documentation, negotiation & conflict resolution, customer service, active listening.
-								</div>
+						</div>
+					</section>
+					<section id="achievements">
+						<h2>achievements</h2>
+						<div class="row project">
+							<div class="col-md-3 title">
+								<h5>Senior Thesis</h5>
 							</div>
-							<div class="row area-of-expertise">
-								<div class="col-md-12">
-									<h3>programming</h3>
-									Java, C++, C, Python, ObjC, HTML, CSS, JavaScript, documentation, object oriented programming, project management, teaching.
-								</div>
+							<div class="col-md-9 description">
+								<h4>The Art of Management</h4>
+								Wrote handbook of management and communication techniques focusing on inter- personal relationships and team dynamics. Researched management techniques, body language, and hierarchical structures.
 							</div>
-						</section>
-						<section id="education">
-							<h2>education</h2>
-							<div class="row">
-								<div class="col-md-3">
-									<h5>2008 - 2012</h5>
-								</div>
-								<div class="col-md-9">
-									<h4>Bachelor of Arts</h4>
-									Hampshire College, Amherst MA
-								</div>
+						</div>
+						<div class="row project">
+							<div class="col-md-3 title">
+								<h5>Management Mentor</h5>
 							</div>
-							<div class="row concentration">
-								<div class="col-md-3">
-									Concentration:
-								</div>
-								<div class="col-md-9">
-									communication and team management with case studies in computer science and theater
-								</div>
+							<div class="col-md-9 description">
+								Designed and launched a series of management workshops focusing on different aspects of theater management including interpersonal communication, conflict resolution, rehearsal structure, and stage management techniques. Created handbook of best practices and technical information.
 							</div>
-						</section>
-					</div>
+						</div>
+						<div class="row project">
+							<div class="col-md-3 title">
+								<h5>Student IT Manager</h5>
+							</div>
+							<div class="col-md-9 description">
+								Generated documentation covering common software and hardware issues, symptoms, and solutions. Redesigned workflow and documented best practices. Created a training manual.
+							</div>
+						</div>
+					</section>
+					<section id="skills">
+						<h2>skills</h2>
+						<div class="row area-of-expertise">
+							<div class="col-md-12">
+								<h3>management</h3>
+								Project management (introductory Agile, kanban boards, & Getting Things Done), community management, experience with non-traditional hierarchies, large group meeting/discussion facilitation, scheduling, filing, inventory.
+							</div>
+						</div>
+						<div class="row area-of-expertise">
+							<div class="col-md-12">
+								<h3>communication</h3>
+								Group facilitation, streamlined project tracking & documentation, policy creation & documentation, negotiation & conflict resolution, customer service, active listening.
+							</div>
+						</div>
+						<div class="row area-of-expertise">
+							<div class="col-md-12">
+								<h3>programming</h3>
+								Java, C++, C, Python, ObjC, HTML, CSS, JavaScript, documentation, object oriented programming, project management, teaching.
+							</div>
+						</div>
+					</section>
+					<section id="education">
+						<h2>education</h2>
+						<div class="row">
+							<div class="col-md-3">
+								<h5>2008 - 2012</h5>
+							</div>
+							<div class="col-md-9">
+								<h4>Bachelor of Arts</h4>
+								Hampshire College, Amherst MA
+							</div>
+						</div>
+						<div class="row concentration">
+							<div class="col-md-3">
+								Concentration:
+							</div>
+							<div class="col-md-9">
+								communication and team management with case studies in computer science and theater
+							</div>
+						</div>
+					</section>
 				</div>
 			</div>
 		</div>
-		<footer class="container-fluid">
+		<footer id="contactme" class="container-fluid">
 			<div class="row">
 				<div class="col-md-12">
-					&nbsp;
+					<ul class="noindent">
+						<li class="contact-item"><span class="genericon genericon-home"></span>Chicago, IL</li>
+						<li class="contact-item"><span class="genericon genericon-phone"></span>(847) 791 4808</li>
+						<li class="contact-item"><a href="mailto:hello@shawnajroberts.com"><span class="genericon genericon-mail"></span>hello@shawnajroberts.com</a></li>
+					</ul>
+					<ul class="noindent">
+						<li class="contact-item"><span class="genericon genericon-github"></span><a href="http://github.com/shawnajean">shawnajean</a></li>
+						<li class="contact-item"><span class="genericon genericon-twitter"></span><a href="http://twitter.com/shawnajeanr">shawnajeanr</a></li>
+						<li class="contact-item"><span class="genericon genericon-wordpress"></span><a href="http://shawnajroberts.com">shawnajroberts.com</a></li>
+					</ul>
 				</div>
 			</div>
 		</footer>
