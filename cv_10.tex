@@ -21,45 +21,62 @@
 
 \documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
 
+\usepackage{multicol}
+\usepackage{enumitem}
+
 \begin{document}
 
-\header{shawna}{j}{roberts}{} % Your name and current job title/field
+\header{shawna}{j}{roberts}
+{\href{http://shawnajroberts.com}{shawnajroberts.com} | \href{mailto:hello@shawnajroberts.com}{hello@shawnajroberts.com}} % Your name and current job title/field
 
 %----------------------------------------------------------------------------------------
-%	SIDEBAR SECTION
+%	SKILLS SECTION
 %----------------------------------------------------------------------------------------
+\par\vspace{1.5\parskip}
+\section{skills}
+\par\vspace{-1\parskip}
+\begin{multicols}{3}
 
-\begin{aside} % In the aside, each new line forces a line break
-\section{contact}
-6649 N Greenview Ave
-Apt 2A
-Chicago IL 60626
-~
-{\genericons $\char"F437$} (847) 791 4808
-~
-\href{mailto:hello@shawnajroberts.com}{hello@
-shawnajroberts.com}
-\section{management}
-Agile project management,
-Kanban boards,
-conflict resolution,
-team dynamics
-\section{communication}
-large group facilitation,
-active listening,
-body language
-\section{programming}
-Java, C++, C,
-Python, ObjC,
-HTML, CSS, JavaScript,
-documentation
-\end{aside}
+\subsection{programming}{}
 
+\fontsize{9pt}{11pt}\bodyfont{\begin{itemize}
+\item Java, C++, C
+\item ObjC
+\item HTML, CSS, JavaScript
+\item object oriented programming
+\item project management
+\item documentation
+\item teaching
+\end{itemize}}
+
+\subsection{management}{}
+
+\fontsize{9pt}{11pt}\bodyfont{\begin{itemize}
+\item Project management (introductory Agile, kanban boards, \& Getting Things Done)
+\item Community management
+\item Experience with non-traditional hierarchies
+\item Large group meeting/discussion facilitation
+\end{itemize}}
+
+\subsection{communication}{}
+
+\fontsize{9pt}{11pt}\bodyfont{\begin{itemize}
+\item Group facilitation
+\item Streamlined project tracking \& documentation
+\item Policy creation \& documentation
+\item Negotiation \& conflict resolution
+\item Customer service
+\item Active listening.
+\end{itemize}}
+
+\end{multicols}
+
+\small\bodyfont{\ }
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
-
+\vspace{-3\parskip}
 \section{experience}
 %------------------------------------------------
 \subsection
@@ -71,7 +88,11 @@ documentation
 \entry
 {dec.2014 - present}
 {Happiness Engineer}{}
-{Help people use Automattic’s products, including WordPress.com, Jetpack, and Gravatar. Troubleshoot, investigate, and create detailed bug reports. Create and edit support documentation.}
+{\begin{itemize}[leftmargin=*,topsep=0pt]
+\item Help people use Automattic’s products, including WordPress.com, Jetpack, and Gravatar.
+\item Troubleshoot, investigate, and create detailed bug reports.
+\item Create and edit support documentation.
+\end{itemize}}
 %------------------------------------------------
 \end{entrylist}
 %------------------------------------------------
@@ -85,113 +106,24 @@ documentation
 \entry
 {aug.2012 - feb.2014}
 {Telecommunications Technician}{}
-{Assist Network Engineer in design, construction and maintenance of campus network and phone infrastructure. Oversee physical network implementation. Provide support and troubleshooting for VoIP, POTS, CATV, and network infrastructure.}
-%------------------------------------------------
-\entry
-{may.2012 - aug.2012}
-{Computer Support Assistant}{}
-{Provided technical support to faculty and staff members. Set up and deployed college machines for campus events. Created workflow and wiki for the Student IT Center.}
-%------------------------------------------------
-\entry
-{jan.2012 - mar.2012}
-{Help Desk Associate}{}
-{Provided technical support to faculty and staff members via telephone. First point of contact for all Help Desk calls. Coordinated call transfers within campus User Support staff.}
+{\begin{itemize}[leftmargin=*,topsep=0pt]
+\item Assist Network Engineer in design, construction and maintenance of campus network and phone infrastructure.
+\item Oversee physical network implementation.
+\item Provide support and troubleshooting for VoIP, POTS, CATV, and network infrastructure.
+\end{itemize}}
+\\
 %------------------------------------------------
 \entry
 {jan.2012 - may.2012}
 {Student IT Manager}{}
-{Supervised student workers. Participated in hiring and training of new technicians. Coordinated communication between Staff User Support and student workers. Provided technical support to student, faculty, and staff members.}
+{\begin{itemize}[leftmargin=*,topsep=0pt]
+\item Supervised student workers.
+\item Participated in hiring and training of new technicians.
+\item Coordinated communication between Staff User Support and student workers.
+\item Provided technical support to student, faculty, and staff members.
+\end{itemize}}
 %------------------------------------------------
 \end{entrylist}
-
-%------------------------------------------------
-%------------------------------------------------
-
-\subsection
-{hampshire college theatre}
-{Amherst, Massachusetts}
-
-\begin{entrylist}
-%------------------------------------------------
-\entry
-{jan.2011 - may.2012}
-{Box Office Supervisor}{}
-{Coordinated seasonal ticket sales with team. Worked closely with Faculty and Staff Technical Director to update policy. Coordinated transition to online ticket reservation system. Trained new Box Office Managers.}
-%------------------------------------------------
-\entry
-{jan.2011 - may.2012}
-{Management Mentor}{}
-{Designed and implemented training program for new theater managers. Worked closely with Staff Technical Director in identifying sustainable best practices. Worked in one-on-one capacity with new stage managers.}
-%------------------------------------------------
-\end{entrylist}
-
-%------------------------------------------------
-%------------------------------------------------
-
-\subsection
-{enchanted circle theater}
-{Holyoke, Massachusetts}
-
-\begin{entrylist}
-%------------------------------------------------
-\entry
-{sept.2010 - dec.2011}
-{Production Assistant}{Sojourner's Truth}
-{Stage manager during performances. Managed technical aspects of show including props, costumes, and set pieces. Researched, compiled, and ran media slideshow, a core element of performances.}
-%------------------------------------------------
-\entry
-{jun.2011 - sept.2011}
-{Program Coordinator}{Youth \& Shakespeare}
-{Scheduled and ran weekly team meetings. Coordinated delivery of props, costumes, and set pieces to classroom sites. Tracked scripts and property, organized final performance, and documented process. Coordinated communication with parents.}
-%------------------------------------------------
-\end{entrylist}
-
-%----------------------------------------------------------------------------------------
-%	ACHIEVEMENTS SECTION
-%----------------------------------------------------------------------------------------
-
-\section{achievements}
-
-\begin{entrylist}
-%------------------------------------------------
-\entry
-{Senior Thesis}
-{The Art of Management}{}
-{Wrote handbook of management and communication techniques focusing on interpersonal relationships and team dynamics. Researched management techniques, body language, and hierarchical structures.\\}
-%------------------------------------------------
-\entry
-{Management Mentor}{}{}
-{Designed and launched a series of management workshops focusing on different aspects of theater management including interpersonal communication, conflict resolution, rehearsal structure, and stage management techniques. Created handbook of best practices and technical information.\\}
-%------------------------------------------------
-\entry
-{HC Theater Box Office}{}{}
-{Reorganized Box Office space. Researched, tested, and implemented ticket reservation websites. Streamlined documentation of policies and procedures. Presented final documentation and ticket reservation system to Theatre Board.\\}
-%------------------------------------------------
-\entry
-{Student IT Manager}{}{}
-{Generated documentation covering common software and hardware issues, symptoms, and solutions. Redesigned workflow and documented best practices. Created a training manual.\\}
-%------------------------------------------------
-\end{entrylist}
-
-%----------------------------------------------------------------------------------------
-%	SKILLS SECTION
-%----------------------------------------------------------------------------------------
-
-\section{skills}
-
-\subsection{management}{}
-
-\small\bodyfont{Project management (introductory Agile, kanban boards, \& Getting Things Done), community management, experience with non-traditional hierarchies, large group meeting/discussion facilitation, scheduling, filing, inventory.}
-
-\subsection{communication}{}
-
-\small\bodyfont{Group facilitation, streamlined project tracking \& documentation, policy creation \& documentation, negotiation \& conflict resolution, customer service, active listening.}
-
-\subsection{programming}{}
-
-\small\bodyfont{Java, C++, C, Python, ObjC, HTML, CSS, JavaScript, documentation, object oriented programming, project management, teaching.}
-
-\small\bodyfont{\ }
 
 %----------------------------------------------------------------------------------------
 %    EDUCATION SECTION
@@ -202,6 +134,11 @@ documentation
 \begin{entrylist}
 %------------------------------------------------
 \entry
+{2014--present}
+{Nanodegree}{Front End Developer}
+{Udacity}
+%------------------------------------------------
+\entry
 {2008--2012}
 {Bachelor of Arts}{}
 {Hampshire College, Amherst MA}
@@ -209,10 +146,9 @@ documentation
 %fake entry for reasonable concentration formatting
 \entry
 {\mediumitalic Concentration:}
-{\normalfont communication and team management in computer science and theater}{}{}
+{\normalfont communication and team management with case studies in computer science and theater}{}{}
 %------------------------------------------------
 \end{entrylist}
 %----------------------------------------------------------------------------------------
-
 
 \end{document}

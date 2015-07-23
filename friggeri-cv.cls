@@ -60,11 +60,6 @@
 \newfontfamily\mediumitalic[ExternalLocation=Fonts/HelveticaNeue/]{HelveticaNeueLightItalic.ttf}
 \newfontfamily\lightbold[ExternalLocation=Fonts/HelveticaNeue/]{HelveticaNeueMedium.ttf}
 
-\newfontfamily\genericons[ExternalLocation=Fonts/]{Genericons.ttf}
-\DeclareTextFontCommand{\textfallback}{\genericons}
-
-
-
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[ExternalLocation=Fonts/HelveticaNeue/, Mapping=tex-text, Color=textcolor]{HelveticaNeueLight.ttf}
 
@@ -77,24 +72,26 @@
 \RequirePackage{tikz}
 
 \newcommand{\rolefont}{%
-  \fontsize{14pt}{24pt}\selectfont%
-  \thinfont%
+  \fontsize{11pt}{20pt}\selectfont%
+  \bodyfont%
   \color{white}%
 }
 
 \newcommand{\header}[4]{%
   \begin{tikzpicture}[remember picture,overlay]
-    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=4cm] (box) at (current page.north){};
+    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=3cm] (box) at (current page.north){};
     \node [anchor=center] (name) at (box) {%
-      \fontsize{40pt}{72pt}\color{header}%
+      \fontsize{40pt}{55pt}\color{header}%
       {\bodyfont #1}{\thinfont #2}{\headingfont #3}
     };
     \node [anchor=north] at (name.south) {%
-      \fontsize{14pt}{24pt}\color{header}%
+      \rolefont\color{header}%
       \thinfont #4%
+      \\
     };
+
   \end{tikzpicture}
-  \vspace{2.5cm}
+  \vspace{1cm}
   \vspace{-2\parskip}
 }
 
@@ -121,17 +118,17 @@
 }
 
 \renewcommand{\section}[1]{
-  \par\vspace{\parskip}
+  %\par\vspace{\parskip}
   {%
-    \huge\headingfont\color{headercolor}%
+    \LARGE\headingfont\color{headercolor}%
     \@sectioncolor #1%
   }
-  \par\vspace{\parskip}
+  \par\vspace{.35\parskip}
 }
 
 \renewcommand{\subsection}[2]{
-  \par\vspace{.5\parskip}%
-  \Large\headingfont\color{headercolor} #1%
+  \par\vspace{.35\parskip}%
+  \large\headingfont\color{headercolor} #1%
   \hfill{\footnotesize\addfontfeature{Color=lightgray} #2}%
   %\par\vspace{.25\parskip}%
 }
@@ -152,39 +149,39 @@
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[4]{%
-  \small\lightbold #1 
+  \fontsize{9pt}{11pt}\lightbold #1
   &\parbox[t]{11.5cm}{%
-    \small\bolditalic{#2} \small\bodyfont{#3}%
+    \fontsize{9pt}{11pt}\bolditalic{#2} \fontsize{9pt}{11pt}\bodyfont{#3}%
     \hspace*{\fill}\\%
-    \small\bodyfont{#4}%
+    \fontsize{9pt}{11pt}\bodyfont{#4}%
   }\hspace*{\fill}\\}
 
 %%%%%%%%%%%%%%
 % Side block %
 %%%%%%%%%%%%%%
 
-\RequirePackage[absolute,overlay]{textpos}
-\setlength{\TPHorizModule}{1cm}
-\setlength{\TPVertModule}{1cm}
-\newenvironment{aside}{%
-  \let\oldsection\section
-  \renewcommand{\section}[1]{
-    \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
-  }
-  \begin{textblock}{3.6}(1, 4.33)
-  \begin{flushright}
-  \obeycr
-}{%
-  \restorecr
-  \end{flushright}
-  \end{textblock}
-  \let\section\oldsection
-}
+%\RequirePackage[absolute,overlay]{textpos}
+%\setlength{\TPHorizModule}{1cm}
+%\setlength{\TPVertModule}{1cm}
+%\newenvironment{aside}{%
+%  \let\oldsection\section
+%  \renewcommand{\section}[1]{
+%    \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
+%  }
+%  \begin{textblock}{3.6}(1, 4.33)
+%  \begin{flushright}
+%  \obeycr
+%}{%
+%  \restorecr
+%  \end{flushright}
+%  \end{textblock}
+%  \let\section\oldsection
+%}
 
 
 %%%%%%%%%%%%%%%%
 % Other tweaks %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[left=5.2cm,top=2cm,right=1.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
+\RequirePackage[left=2.5cm,top=2cm,right=2.5cm,bottom=1.5cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
