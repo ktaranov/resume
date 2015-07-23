@@ -4,7 +4,7 @@ body {
 	color: #333333;
 	font-size: 16px;
 	-moz-box-sizing: border-box;
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .row-eq-height {
@@ -70,13 +70,17 @@ a:focus, a:hover {
 
 header {
 	background-color: #333333;
-	color: #ffffff;
+	color: white;
 	text-align: center;
 	font-size: 2em;
 }
 
+header a, header a:hover, header a:focus {
+	color: white;
+}
+
 header #name {
-	padding: 75px 0;
+	padding: 55px 0 40px;
 }
 
 header #name .first {
@@ -89,6 +93,15 @@ header #name .middle {
 
 header #name .last {
 	font-family: "HelveticaNeue-CondensedBold", Helvetica, sans-serif;
+}
+
+header #social-icons ul li{
+	display: inline-block;
+	padding-bottom: 25px;
+}
+
+header #social-icons ul li .genericon {
+	font-size: 1em;
 }
 
 /******************************************************************************/
@@ -110,27 +123,27 @@ nav ul li {
 	display: inline-block;
 	padding-bottom: 5px;
 }
-nav ul li.experience {
+
+nav ul li.skills {
 	border-top: 4px solid #6CE0F1;
 }
 
-nav ul li.experience:hover {
+nav ul li.skills:hover {
 	background-color: #6CE0F1;
 }
-
-nav ul li.achievements {
+nav ul li.experience {
 	border-top: 4px solid #FB4485;
 }
 
-nav ul li.achievements:hover {
+nav ul li.experience:hover {
 	background-color: #FB4485;
 }
 
-nav ul li.skills {
+nav ul li.achievements {
 	border-top: 4px solid #FDA333;
 }
 
-nav ul li.skills:hover {
+nav ul li.achievements:hover {
 	background-color: #FDA333;
 }
 
@@ -196,30 +209,23 @@ nav ul li.contactme:hover {
 
 /******************************************************************************/
 
-/*Sidebar styling*/
-
-#sidebar {
-	font-family: "HelveticaNeue-Light", Helvetica, sans-serif;
-	text-align: right;
-}
-
-.contact-item {
-	padding: 5px 0;
+#main #skills ul, #main #experience ul, #main #achievements ul {
+	list-style: circle;
 }
 
 /******************************************************************************/
 
 /*First letter colorings for headings*/
 
-#experience h2:first-letter {
+#skills h2:first-letter {
 	color: #6CE0F1;
 }
 
-#achievements h2:first-letter {
+#experience h2:first-letter {
 	color: #FB4485;
 }
 
-#skills h2:first-letter {
+#achievements h2:first-letter {
 	color: #FDA333;
 }
 
@@ -230,10 +236,6 @@ nav ul li.contactme:hover {
 /******************************************************************************/
 
 /*Alignments for main content areas*/
-
-#experience h2 {
-	margin-top: 12px;
-}
 
 .location {
 	text-align: right;
@@ -292,29 +294,56 @@ footer a, footer a:hover, footer a:focus {
 /******************************************************************************/
 
 @media screen and (max-width: 768px) {
-	
+
 	/*Fix menu toggle stuff*/
 
-	.navbar-header, .navbar-header button {
-		max-height: 42px;
+	.navbar, .navbar-header, .navbar-header button {
+		max-height: 45px;
+		display: block;
+		width: 100%;
+		margin: 0;
+		border: none;
+		border-radius: 0;
+	}
+
+	.navbar {
+		border-top: 1px white solid;
+		font-family: "HelveticaNeue-CondensedBold", Helvetica, sans-serif;
+		z-index: 1;
+	}
+
+	.navbar-nav, .navbar-nav ul, .navbar-nav li {
+		position: relative;
+		width: 100%;
+		display: block;
+		background-color: white;
+	}
+
+	.navbar .container {
+	  padding-right: 0;
+	  padding-left: 0;
+	}
+
+	.container>.navbar-header {
+  	margin-right: 0;
+  	margin-left: 0;
 	}
 
 	.navbar-nav li {
-		width: 100%;
-		margin-bottom: 5px;
+		margin-bottom: 7px;
 	}
 
 	header {
 		font-size: 1em;
-		max-height: 125px;
+		max-height: 145px;
 	}
 
 	header #name {
 		padding: 1em 0;
 	}
 
-	#experience h2 {
-		margin-top: 0;
+	header #social-icons ul li .genericon{
+		font-size: 1.2em;
 	}
 }
 
@@ -324,17 +353,7 @@ footer a, footer a:hover, footer a:focus {
 		display: none;
 	}
 
-	nav ul li.contactme {
-		display: inline-block;
-	}
-
 	.description {
 		padding-left: 15px;
-	}
-}
-
-@media screen and (min-width: 993px) {
-	nav ul li.contactme {
-		display: none !important;
 	}
 }
