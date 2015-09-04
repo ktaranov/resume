@@ -11,3 +11,8 @@ win.scroll(function() {
 	}
 });
 
+$(document).ready( function(){
+  $(".navbar li a").click(function(event) {
+    $(".navbar-collapse").removeClass("in").addClass("collapse");
+  });
+});
