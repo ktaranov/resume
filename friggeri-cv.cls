@@ -89,7 +89,7 @@
       \thinfont #4%
       \\
     };
-
+    
   \end{tikzpicture}
   \vspace{1cm}
   \vspace{-2\parskip}
@@ -149,7 +149,7 @@
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[4]{%
-  \fontsize{9pt}{11pt}\lightbold #1
+  \fontsize{9pt}{11pt}\lightbold #1 
   &\parbox[t]{11.5cm}{%
     \fontsize{9pt}{11pt}\bolditalic{#2} \fontsize{9pt}{11pt}\bodyfont{#3}%
     \hspace*{\fill}\\%
