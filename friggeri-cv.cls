@@ -65,6 +65,9 @@
 
 \setmathfont[ExternalLocation=Fonts/]{ZapfDingbats.ttf}
 
+\usepackage{fontawesome}
+\newfontfamily{\FA}[ExternalLocation=Fonts/]{FontAwesome.otf}
+
 %%%%%%%%%%
 % Header %
 %%%%%%%%%%
@@ -183,5 +186,5 @@
 % Other tweaks %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[left=2.5cm,top=2cm,right=2.5cm,bottom=1.5cm,nohead,nofoot]{geometry}
+\RequirePackage[left=2.5cm,top=2cm,right=2.5cm,bottom=1cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
