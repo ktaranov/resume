@@ -1,1 +1,1 @@
-View my resume here: http://shawnajean.github.io/resume/
+View my resume here: http://resume.shawnajean.tech
