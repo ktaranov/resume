@@ -64,6 +64,10 @@ a:focus, a:hover {
   color: #333333;
 }
 
+.contact-item {
+	font-family: "HelveticaNeue-Light", Helvetica, sans-serif;
+}
+
 /******************************************************************************/
 
 /*Header stylings*/
